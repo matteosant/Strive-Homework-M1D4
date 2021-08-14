@@ -96,27 +96,58 @@ const exercise6 = function() {
     
     let jump = `To the Moon!`
 
-for (let i = 0; i < jump.length-1; i++) {
+for (let i = 0; i < jump.length; i++) {
     
 switch (jump[i]){
     
   case jump[i] = `o`:
     jump = jump.replace(jump[i], ``);
-    break;
+  
 
   case jump[i] = `e`:
     jump = jump.replace(jump[i], ``);
-    break;    
+    break;
+ 
    }
 }
-return jump;
+return jump; // it's working partially it removes a space after "to"
+} 
+
+exercise6()
+
+
+let str = "To the Moon";
+
+function remVowel(str)
+{
+    let alVowels = [ 'a', 'e', 'i', 'o', 'u',
+               'A', 'E', 'I', 'O', 'U' ];
+
+    let result = "";
+     
+    for (let i = 0; i < str.length; i++)
+    {
+         
+        if (!alVowels.includes(str[i])) /* it is returning what it's left when the vowels are not considered */
+        {
+            result += str[i]; 
+        }
+    }
+    return result;
 }
+
+remVowel(str)
+
+ 
+
+
+
 
 /* EXERCISE 7
 Write the code to increase all the numeric values in a array by 1.
 */
 
-/* WRITE YOUR CODE HERE */
+
 
 /* EXERCISE 8 
 Replace all the strings in an array with their length.
