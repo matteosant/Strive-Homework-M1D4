@@ -26,6 +26,7 @@ let maxValue = maxArray[0]
 for (let i = 1; i < maxArray.length; i++) {
     if (maxArray[i] > maxValue){
         maxValue = maxArray[i]
+        break;
     } else {
         maxValue
     }
@@ -120,7 +121,7 @@ let str = "To the Moon";
 
 function remVowel(str)
 {
-    let alVowels = [ 'a', 'e', 'i', 'o', 'u',
+    let allVowels = [ 'a', 'e', 'i', 'o', 'u',
                'A', 'E', 'I', 'O', 'U' ];
 
     let result = "";
@@ -128,7 +129,7 @@ function remVowel(str)
     for (let i = 0; i < str.length; i++)
     {
          
-        if (!alVowels.includes(str[i])) /* it is returning what it's left when the vowels are not considered */
+        if (!allVowels.includes(str[i])) /* it is returning what it's left when the vowels are not considered */
         {
             result += str[i]; 
         }
@@ -145,7 +146,20 @@ remVowel(str)
 
 /* EXERCISE 7
 Write the code to increase all the numeric values in a array by 1.
+
+
 */
+
+let arrayIncrease = [34, 3, `aWOrd`, 9, `$$$$`]
+
+
+for (let i = 0; i<arrayIncrease.length; i++) {
+  if (typeof arrayIncrease[i] === `number`) {
+    arrayIncrease[i]++
+  }
+}
+arrayIncrease
+
 
 
 
@@ -154,7 +168,14 @@ Replace all the strings in an array with their length.
 es.: ["strive", "is", "great"] => [6, 2, 5]
 */
 
-/* WRITE YOUR CODE HERE */
+let stringArray = [`I`, `am`, `Matteo`]
+let myLength = []
+
+for (let i = 0; i < stringArray.length; i++) {
+  myLength.push(stringArray[i].length)
+}
+myLength;
+
 
 /* WHEN YOU ARE FINISHED
 Send the code on the Eduflow platform. In the next days we'll also learn how to use GIT
