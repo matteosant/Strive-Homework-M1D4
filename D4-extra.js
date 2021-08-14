@@ -93,28 +93,57 @@ myArray;
 Write the code to remove all the vowels from a string.
 */
 
+
+let jump = "To the Moon!"
+
+let result = ""
+
+for (let i = 0; i < jump.length; i++) {
+  
+if (!(jump[i] === "o") && !(jump[i] === "e") && !(jump[i] === "a")  && !(jump[i] === "i") && !(jump[i] === "u")) {
+      result += jump[i];
+    }
+}  // WORKING BUT I DON'T LIKE IT                                                                                                         
+
+
+
+/*
+let jump = `To the Moon!`
+let result = ""
+
+for (let i = 0; i < jump.length; i++) {      //why this is not working?
+
+if (jump[i]===`o`){
+jump.replace(jump[i], "")
+} 
+} */
+
+
+
+
+
 const exercise6 = function() {
     
     let jump = `To the Moon!`
 
 for (let i = 0; i < jump.length; i++) {
     
-switch (jump[i]){
+switch (jump){
     
   case jump[i] = `o`:
     jump = jump.replace(jump[i], ``);
   
 
   case jump[i] = `e`:
-    jump = jump.replace(jump[i], ``);
-    break;
+   jump = jump.replace(jump[i], ``);
+ 
  
    }
 }
-return jump; // it's working partially it removes a space after "to"
+return jump; 
 } 
 
-exercise6()
+exercise6()// it's working partially it removes a space after "to"
 
 
 let str = "To the Moon";
@@ -129,7 +158,7 @@ function remVowel(str)
     for (let i = 0; i < str.length; i++)
     {
          
-        if (!allVowels.includes(str[i])) /* it is returning what it's left when the vowels are not considered */
+        if (!allVowels.includes(str[i])) /* WORKING it is returning what it's left when the vowels are not considered */
         {
             result += str[i]; 
         }
