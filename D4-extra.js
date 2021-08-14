@@ -94,27 +94,30 @@ Write the code to remove all the vowels from a string.
 */
 
 
-let jump = "To the Moon!"
+let jump = "To the MOon!"
+
 
 let result = ""
 
 for (let i = 0; i < jump.length; i++) {
-  
-if (!(jump[i] === "o") && !(jump[i] === "e") && !(jump[i] === "a")  && !(jump[i] === "i") && !(jump[i] === "u")) {
-      result += jump[i];
-    }
-}  // WORKING BUT I DON'T LIKE IT                                                                                                         
 
+  
+if (!(jump[i].toLowerCase() === "o") && !(jump[i].toLowerCase() === "e") && !(jump[i].toLowerCase() === "a") &&
+    !(jump[i].toLowerCase() === "i") && !(jump[i].toLowerCase() === "u")) 
+{
+ result += jump[i];
+    }
+}  // WORKING BUT I DON'T LIKE IT 
 
 
 /*
 let jump = `To the Moon!`
-let result = ""
+let result2 = ""
 
 for (let i = 0; i < jump.length; i++) {      //why this is not working?
 
 if (jump[i]===`o`){
-jump.replace(jump[i], "")
+result2 += jump.replace(jump[i], "")
 } 
 } */
 
