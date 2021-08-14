@@ -92,7 +92,25 @@ myArray;
 Write the code to remove all the vowels from a string.
 */
 
-/* WRITE YOUR CODE HERE */
+const exercise6 = function() {
+    
+    let jump = `To the Moon!`
+
+for (let i = 0; i < jump.length-1; i++) {
+    
+switch (jump[i]){
+    
+  case jump[i] = `o`:
+    jump = jump.replace(jump[i], ``);
+    break;
+
+  case jump[i] = `e`:
+    jump = jump.replace(jump[i], ``);
+    break;    
+   }
+}
+return jump;
+}
 
 /* EXERCISE 7
 Write the code to increase all the numeric values in a array by 1.
