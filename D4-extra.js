@@ -107,7 +107,7 @@ if (!(jump[i].toLowerCase() === "o") && !(jump[i].toLowerCase() === "e") && !(ju
 {
  result += jump[i];
     }
-}  // WORKING BUT I DON'T LIKE IT 
+}  // WORKING BUT I DON'T LIKE IT, it's seems verbose
 
 
 /*
